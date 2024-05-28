@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+/* Estilo geral para formulários */
+form {
+    display: flex; /* Organiza os elementos em linhas */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    width: 300px; /* Ajustar largura conforme necessário */
+    margin: 20px auto; /* Centraliza o formulário na página */
+    padding: 15px; /* Adiciona espaço interno no formulário */
+    border: 1px solid #ccc; /* Borda fina para contorno */
+    border-radius: 5px; /* Arredonda os cantos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Efeito de sombra sutil */
+  }
+  
+  /* Estilo para rótulos (labels) */
+  label {
+    display: block; /* Ocupa toda a largura disponível */
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
+  /* Estilo para inputs de texto e email */
+  input[type="text"],
+  input[type="email"] {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 8px; /* Espaçamento interno no input */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 3px; /* Arredonda os cantos */
+    box-sizing: border-box; /* Contar o padding no tamanho total do input */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  /* Estilo para input de senha (esconder senha) */
+  input[type="password"] {
+    /* Mesmos estilos que os inputs de texto/email, mas... */
+    display: block; /* Ocupa toda a largura disponível */
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+    /* Adiciona estilo para esconder a senha */
+    -webkit-text-security: password; /* Chrome, Safari, etc. */
+    -moz-text-security: password; /* Firefox */
+    -ms-text-security: password; /* IE */
+    text-security: password; /* Edge */
+  }
+  
+  /* Estilo para botão de submit */
+  button[type="submit"] {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor da fonte branca */
+    padding: 10px 15px; /* Espaçamento interno no botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Indicador de clique */
+    transition: background-color 0.3s ease; /* Efeito de hover */
+  }
+  
+  /* Estilo para botão de submit ao passar o mouse (hover) */
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escuro */
+  }
+  
